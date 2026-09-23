@@ -1,0 +1,218 @@
+{
+  "apis": [
+    {
+      "name": "getBids",
+      "oldApi": { "method": "POST", "path": "/v1/bid/list" },
+      "newApi": { "method": "POST", "path": "/v1/query/getBids" },
+      "request": {
+        "body": {"cats":[4,41],"StartDate":"","endDate":"","areas":[],"holdCompany":"","projectOwners":"","fileName":"","pageNum":1,"pageSize":20,"EQP":"e90aaded-0a2c-4cda-b3eb-ee2f797a4cf5","OS":1,"BA":"","BP":"","Ver":"2.0.0","TS":1789890925687,"Sign":"1a73de1cb7d1243e497840ca24e990fd"}
+      },
+      "response": {
+        "success": true,
+        "code": 200,
+        "errMsg": "",
+        "data": {
+          "fields": [
+                {
+                    "fieldTitle": "文件名称",
+                    "fieldName": "fileName"
+                },
+                {
+                    "fieldTitle": "项目名称",
+                    "fieldName": "projectName"
+                },
+                {
+                    "fieldTitle": "项目业主",
+                    "fieldName": "projectOwnersFormat"
+                },
+                {
+                    "fieldTitle": "控股集团/公司",
+                    "fieldName": "holdCompany"
+                },
+                {
+                    "fieldTitle": "风电（MW）",
+                    "fieldName": "windCapacityFormat"
+                },
+                {
+                    "fieldTitle": "光伏（MW）",
+                    "fieldName": "pvCapacityFormat"
+                },
+                {
+                    "fieldTitle": "光热（MW）",
+                    "fieldName": "solarThermalCapacityFormat"
+                },
+                {
+                    "fieldTitle": "一体化（MW）",
+                    "fieldName": "integrationCapacityFormat"
+                },
+                {
+                    "fieldTitle": "项目公布时间",
+                    "fieldName": "bidDate"
+                },
+                {
+                    "fieldTitle": "地区",
+                    "fieldName": "area"
+                },
+                {
+                    "fieldTitle": "配储容量（MW）",
+                    "fieldName": "storageCapacityFormat"
+                },
+                {
+                    "fieldTitle": "配储时长（h）",
+                    "fieldName": "storageDurationFormat"
+                }
+            ],
+          "pageData": {
+            "totalPage": 1,
+            "totalCount": 12,
+            "pageNum": 1,
+            "pageSize": 20,
+            "list": [
+              {
+                  "Id": 19108,
+                  "ParentId": 19107,
+                  "IndustryId": 4,
+                  "Industry": "风光",
+                  "projectTypeId": 41,
+                  "projectType": "风光指数",
+                  "isOverallBid": 0,
+                  "holdCompany": "发给分隔符",
+                  "projectName": "没拿三毛三毛",
+                  "scaleUnit": 1,
+                  "bidDate": "2026-09-18",
+                  "region": "河北",
+                  "city": "唐山",
+                  "area": "河北-唐山",
+                  "createTime": "2026-09-18 15:00:10",
+                  "isBottomBid": 1,
+                  "isEnable": 1,
+                  "isEnableTxt": "启用",
+                  "existWinBid": 0,
+                  "fileName": "发个光伏发个",
+                  "year": 2026,
+                  "yearTxt": "2026年",
+                  "yearFormat": "2026年",
+                  "projectOwners": "[\"法国干饭干饭\"]",
+                  "projectOwnersTxt": "法国干饭干饭",
+                  "projectOwnersFormat": "法国干饭干饭",
+                  "projectOwnerType": 1,
+                  "projectOwnerCount": 1,
+                  "fgProjectType": "风电",
+                  "windCapacity": 30000000.0000000,
+                  "windCapacityTxt": "30000000MW",
+                  "windCapacityFormat": "30000000MW"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "list",
+      "oldApi": { "method": "POST", "path": "/v1/bid/list" },
+      "newApi": { "method": "POST", "path": "/v1/bid/list" },
+      "request": {
+        "body": {"cats":[4,41],"StartDate":"","endDate":"","areas":[],"holdCompany":"","projectOwners":"","fileName":"","pageNum":1,"pageSize":20,"EQP":"e90aaded-0a2c-4cda-b3eb-ee2f797a4cf5","OS":1,"BA":"","BP":"","Ver":"2.0.0","TS":1789890925687,"Sign":"1a73de1cb7d1243e497840ca24e990fd"}
+      },
+      "response": {
+        "success": true,
+        "code": 200,
+        "errMsg": "",
+        "data": {
+          "fields": [
+                {
+                    "fieldTitle": "文件名称",
+                    "fieldName": "fileName"
+                },
+                {
+                    "fieldTitle": "项目名称",
+                    "fieldName": "projectName"
+                },
+                {
+                    "fieldTitle": "项目业主",
+                    "fieldName": "projectOwnersFormat"
+                },
+                {
+                    "fieldTitle": "控股集团/公司",
+                    "fieldName": "holdCompany"
+                },
+                {
+                    "fieldTitle": "风电（MW）",
+                    "fieldName": "windCapacityFormat"
+                },
+                {
+                    "fieldTitle": "光伏（MW）",
+                    "fieldName": "pvCapacityFormat"
+                },
+                {
+                    "fieldTitle": "光热（MW）",
+                    "fieldName": "solarThermalCapacityFormat"
+                },
+                {
+                    "fieldTitle": "一体化（MW）",
+                    "fieldName": "integrationCapacityFormat"
+                },
+                {
+                    "fieldTitle": "项目公布时间",
+                    "fieldName": "bidDate"
+                },
+                {
+                    "fieldTitle": "地区",
+                    "fieldName": "area"
+                },
+                {
+                    "fieldTitle": "配储容量（MW）",
+                    "fieldName": "storageCapacityFormat"
+                },
+                {
+                    "fieldTitle": "配储时长（h）",
+                    "fieldName": "storageDurationFormat"
+                }
+            ],
+          "pageData": {
+            "totalPage": 1,
+            "totalCount": 12,
+            "pageNum": 1,
+            "pageSize": 20,
+            "list": [
+              {
+                  "Id": 19108,
+                  "ParentId": 19107,
+                  "IndustryId": 4,
+                  "Industry": "风光",
+                  "projectTypeId": 41,
+                  "projectType": "风光指数",
+                  "isOverallBid": 0,
+                  "holdCompany": "发给分隔符",
+                  "projectName": "没拿三毛三毛",
+                  "scaleUnit": 1,
+                  "bidDate": "2026-09-18",
+                  "region": "河北",
+                  "city": "唐山",
+                  "area": "河北-唐山",
+                  "createTime": "2026-09-18 15:00:10",
+                  "isBottomBid": 1,
+                  "isEnable": 1,
+                  "isEnableTxt": "启用",
+                  "existWinBid": 0,
+                  "fileName": "发个光伏发个",
+                  "year": 2026,
+                  "yearTxt": "2026年",
+                  "yearFormat": "2026年",
+                  "projectOwners": "[\"法国干饭干饭\"]",
+                  "projectOwnersTxt": "法国干饭干饭",
+                  "projectOwnersFormat": "法国干饭干饭",
+                  "projectOwnerType": 1,
+                  "projectOwnerCount": 1,
+                  "fgProjectType": "风电",
+                  "windCapacity": 30000000.0000000,
+                  "windCapacityTxt": "30000000MW",
+                  "windCapacityFormat": "30000000MW"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

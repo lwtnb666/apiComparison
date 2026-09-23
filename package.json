@@ -1,0 +1,12 @@
+{
+  "name": "api-diff-tester",
+  "version": "1.0.0",
+  "private": true,
+  "description": "新老接口出入参差异对比脚本（字段结构 + 类型），纯 Node 18+ 零依赖",
+  "scripts": {
+    "start": "node index.js",
+    "detail": "node index.js --detail",
+    "mock": "node index.js --mock",
+    "test": "node --test"
+  }
+}
