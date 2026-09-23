@@ -219,9 +219,7 @@ async function main() {
   const env = values.env || config.defaultEnv;
   const envConf = config.envs[env];
   if (!envConf) exit2(`未知环境 "${env}"，可选: ${Object.keys(config.envs).join(', ')}`);
-  if (String(envConf.baseURL).includes('example.com')) {
-    console.warn('[warn] 当前 baseURL 还是占位符，请先在 config.js 里配置真实的新接口地址');
-  }
+  if (!envConf.baseURL) exit2(`环境 "${env}" 还没配地址：请在 .env 里加一行 ${envConf.envVar}=https://新接口域名`);
 
   // fixture
   const fixturesDir = path.join(__dirname, 'fixtures');

@@ -12,10 +12,10 @@ loadDotEnv(path.join(__dirname, '.env'));
  * 【安全约定】token 等敏感信息一律走环境变量，本文件（以及 fixtures/）永不出现真实 token。
  */
 module.exports = {
-  // 环境 → 新接口 baseURL 映射（TODO: 换成真实地址）
+  // 环境 → 新接口 baseURL 映射（地址放 .env，这里只写环境变量名；envVar 用于没配时的报错提示）
   envs: {
-    dev: { baseURL: 'https://bidapi.bjx.com.cn' },
-    test: { baseURL: 'https://dev-4-121-27008.mybjx.net' },
+    dev: { baseURL: process.env.NEW_API_BASE_URL_DEV, envVar: 'NEW_API_BASE_URL_DEV' },
+    test: { baseURL: process.env.NEW_API_BASE_URL_TEST, envVar: 'NEW_API_BASE_URL_TEST' },
   },
   defaultEnv: 'test',
 

@@ -4,11 +4,15 @@
 
 ## 三步上手
 
-### 1. 配 token（只配一次，过期了才换）
+### 1. 配 .env（只配一次，token 过期了才换）
 
-在项目根目录新建 `.env` 文件，内容就一行（值 = 浏览器抓包请求头里的 authtoken）：
+在项目根目录新建 `.env` 文件（注意：注释要单独一行）：
 
 ```
+# 两个环境的接口地址
+NEW_API_BASE_URL_DEV=https://dev环境的接口域名
+NEW_API_BASE_URL_TEST=https://test环境的接口域名
+# 浏览器抓包请求头 authtoken 的值
 NEW_API_TOKEN=你的token
 ```
 
